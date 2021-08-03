@@ -12,6 +12,7 @@ function PaginationButtons() {
       {startIndex >= 10 && (
         <Link
           href={`/search?term=${router.query.term}&start=${startIndex - 10}`}
+          passHref={true}
         >
           <div className="flex flex-grow flex-col items-center cursor-pointer hover:underline">
             <ChevronLeftIcon className="h-5" />
@@ -20,7 +21,10 @@ function PaginationButtons() {
         </Link>
       )}
 
-      <Link href={`/search?term=${router.query.term}&start=${startIndex + 10}`}>
+      <Link
+        href={`/search?term=${router.query.term}&start=${startIndex + 10}`}
+        passHref={true}
+      >
         <div className="flex flex-grow flex-col items-center cursor-pointer hover:underline">
           <ChevronRightIcon className="h-5" />
           <p>Next</p>
