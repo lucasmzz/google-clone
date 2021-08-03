@@ -42,7 +42,7 @@ function Header() {
             Search
           </button>
         </form>
-        <Avatar className="ml-auto" url="https://coaching.papareact.com/ai9" />
+        <Avatar className="ml-auto" url="https://robohash.org/lucasmzz" />
       </div>
 
       {/* Header Options */}
