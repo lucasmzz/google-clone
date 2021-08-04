@@ -17,7 +17,7 @@ function Header() {
     router.push(`/search?term=${term}`);
   };
   return (
-    <header className="sticky top-0 bg-white">
+    <header className="sticky top-0 bg-white w-full">
       <div className="flex w-full p-6 items-center">
         <Image
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png"
@@ -44,7 +44,7 @@ function Header() {
             Search
           </button>
         </form>
-        <Avatar className="ml-auto" url="https://robohash.org/lucasmzz" />
+        <Avatar url="https://robohash.org/lucasmzz" />
       </div>
 
       {/* Header Options */}
